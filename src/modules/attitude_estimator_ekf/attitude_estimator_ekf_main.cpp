@@ -574,8 +574,8 @@ int attitude_estimator_ekf_thread_main(int argc, char *argv[])
 							update_vect,
 							dt,
 							z_k,
-							ekf_params.q[0], // q_rotSpeed,
-							ekf_params.q[1], // q_rotAcc
+							ekf_params.q[0], // q_rotSpeed angleSpeed,
+							ekf_params.q[1], // q_rotAcc angleAcc
 							ekf_params.q[2], // q_acc
 							ekf_params.q[3], // q_mag
 							ekf_params.r[0], // r_gyro
